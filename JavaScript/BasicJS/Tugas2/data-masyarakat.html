@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    // deklarasi variabel
+    let nama = prompt("Nama: ")
+    let kelamin = prompt("Jenis Kelamin (Pria/Wanita): ").toLowerCase()
+    let status = prompt("Status (Sendiri, Kawin, Cerai): ").toLowerCase()
+    let keterangan = ""
+
+    // kelamin -> status -> output
+
+    if (kelamin === "wanita"){  // jika jenis kelamin Wanita
+        // cek status
+        if (status === "sendiri"){keterangan = "Perawan"}
+        else if (status === "kawin"){keterangan = "Menikah"}
+        else if (status === "cerai"){keterangan = "Janda"}
+        // jika status tidak valid
+        else {status = "-"; keterangan = "-"}
+    }
+    else if (kelamin === "pria"){   // jika jenis kelamin Pria
+        // cek status
+        if (status === "sendiri"){keterangan = "Perjaka"}
+        else if (status === "kawin"){keterangan = "Menikah"}
+        else if (status === "cerai"){keterangan = "Duda"}
+        // jika status tidak valid
+        else {status = "-"; keterangan = "-"}
+    }
+    else{   // jika jenis kelamin tidak valid
+        // cek status jika kawin
+        if (status === "kawin"){keterangan = "Menikah"}
+        // cek status selain kawin
+        else if (status === "sendiri" || status === "cerai"){keterangan = "-"}
+        // jika status tidak valid
+        else{status = "-"; keterangan = "-"}
+        kelamin = "-"
+    }
+
+    document.write(
+        "Nama: <b>", nama, "</b><br>",
+        "Jenis Kelamin: <b>", kelamin, "</b><br>",
+        "Status: <b>", status, "</b><br>",
+        "Keterangan: <b>", keterangan, "</b>")        
+</script>
+</body>
+</html>

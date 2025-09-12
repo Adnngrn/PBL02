@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampu Lalu Lintas </title>
+</head>
+    <div style="background-color: black; width: 100px; border-radius: 50px; padding: 20px; display: flex; flex-direction: column; align-items: center; gap: 20px;">
+        <div id="merah" style="background-color: #666666; width: 100px; height: 100px; border-radius: 100%;"></div>
+        <div id="kuning" style="background-color: #666666; width: 100px; height: 100px; border-radius: 100%;"></div>
+        <div id="hijau" style="background-color: #666666; width: 100px; height: 100px; border-radius: 100%;"></div>
+    </div>
+    <h1 id="output"></h1>
+<body>
+    <script>
+        let input = prompt("Warna Lampu lalu lintas (Hijau,Kuning,Merah): ").toLowerCase()
+        const output = document.getElementById('output')
+        const merah = document.getElementById('merah')
+        const kuning = document.getElementById('kuning')
+        const hijau = document.getElementById('hijau')
+        let pesan = ""
+        
+        if (input === "merah"){
+            pesan = "Lampu Merah <br>Berhenti !"
+            merah.style.backgroundColor = "red"
+        }
+        else if (input === "kuning"){
+            pesan = "Lampu Kuning <br>Kendaraan Berhati-hati"
+            kuning.style.backgroundColor = "yellow"
+        }
+        else if (input === "hijau"){
+            pesan = "Lampu Hijau<br>Kendaraan Boleh Berjalan"
+            hijau.style.backgroundColor = "lime"
+        }
+        else{
+            pesan = "inputan warna tidak valid!"
+        }
+
+        output.innerHTML = pesan
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 4</title>
+</head>
+<body>
+    <script>
+        const nama = prompt("Masukkan Nama:");
+        const nip = prompt("Masukkan NIP (18 digit):");
+
+        const tglLahir = nip.substring(0, 8);
+        const tglASN = nip.substring(8, 14);
+        const gender = nip.charAt(14);
+        const noUrut = nip.slice(-3);
+
+        const tahun = tglLahir.substring(0, 4);
+        const bulan = tglLahir.substring(4, 6);
+        const hari = tglLahir.substring(6, 8);
+
+        // Buat objek tanggal (bulan mulai dari 0, jadi dikurang 1)
+        const dateObj = new Date(tahun, parseInt(bulan) - 1, hari);
+
+        const namaHari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+        const namaBulan = [
+            "Januari", "Februari", "Maret", "April", "Mei", "Juni",
+            "Juli", "Agustus", "September", "Oktober", "November", "Desember"
+        ];
+
+        
+        const formatTanggalLahir = `${namaHari[dateObj.getDay()]}, ${hari} ${namaBulan[parseInt(bulan) - 1]} ${tahun}`;
+        // const formatBulanLulus = `${namaBulan[parseInt(bulanLulus) - 1]} ${tahunLulus}`;
+
+        let kelamin = "";
+        if (gender === "1") {
+            kelamin = "Pria";
+        } else if (gender === "2") {
+            kelamin = "Wanita";
+        } else {
+            kelamin = "Tidak diketahui";
+        }
+
+        document.write(`<h3>Data dari NIP:</h3>`);
+        document.write(`Nama: ${nama}<br>`);
+        document.write(`Tanggal Lahir: ${formatTanggalLahir}<br>`);
+        document.write(`Tahun ASN: ${tglASN}<br>`);
+        document.write(`Jenis Kelamin: ${kelamin}<br>`);
+        document.write(`Nomor Urut: ${noUrut}<br>`);
+    </script>
+
+</body>
+</html>

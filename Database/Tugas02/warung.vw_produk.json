@@ -1,0 +1,56 @@
+[{
+  "_id": "P001",
+  "harga": 3000,
+  "nama": "Indomie",
+  "satuan": "Bungkus",
+  "stok": 10
+},
+{
+  "_id": "P002",
+  "harga": 18000,
+  "nama": "Roti",
+  "satuan": "Pak",
+  "stok": 3
+},
+{
+  "_id": "P003",
+  "harga": 4700,
+  "nama": "Kecap",
+  "satuan": "Botol",
+  "stok": 8
+},
+{
+  "_id": "P004",
+  "harga": 5800,
+  "nama": "Saos Tomat",
+  "satuan": "Botol",
+  "stok": 8
+},
+{
+  "_id": "P005",
+  "harga": 3500,
+  "nama": "Bihun",
+  "satuan": "Bungkus",
+  "stok": 5
+},
+{
+  "_id": "P006",
+  "harga": 15000,
+  "nama": "Sikat Gigi",
+  "satuan": "Pak",
+  "stok": 5
+},
+{
+  "_id": "P007",
+  "harga": 10000,
+  "nama": "Pasta Gigi",
+  "satuan": "Pak",
+  "stok": 7
+},
+{
+  "_id": "P008",
+  "harga": 7300,
+  "nama": "Saos Sambal",
+  "satuan": "Botol",
+  "stok": 5
+}]

@@ -1,0 +1,49 @@
+[{
+  "_id": "PLG001",
+  "alamat": "Priok",
+  "kelamin": "Pria",
+  "kota": "Jakarta",
+  "nama": "Mohammad"
+},
+{
+  "_id": "PLG002",
+  "alamat": "Cilincing",
+  "kelamin": "Pria",
+  "kota": "Jakarta",
+  "nama": "Naufal"
+},
+{
+  "_id": "PLG003",
+  "alamat": "Bojongsoang",
+  "kelamin": "Pria",
+  "kota": "Bandung",
+  "nama": "Atila"
+},
+{
+  "_id": "PLG004",
+  "alamat": "Buah Batu",
+  "kelamin": "Wanita",
+  "kota": "Bandung",
+  "nama": "Tsalsa"
+},
+{
+  "_id": "PLG005",
+  "alamat": "Gubeng",
+  "kelamin": "Wanita",
+  "kota": "Surabaya",
+  "nama": "Damay"
+},
+{
+  "_id": "PLG006",
+  "alamat": "Darmo",
+  "kelamin": "Pria",
+  "kota": "Surabaya",
+  "nama": "Tsaniy"
+},
+{
+  "_id": "PLG007",
+  "alamat": "Lebak Bulus",
+  "kelamin": "Wanita",
+  "kota": "Jakarta",
+  "nama": "Nabila"
+}]
